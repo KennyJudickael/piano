@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="piano">
+      <div class="piano__body">
+        <div class="piano__speaker"></div>
+        <div class="piano__interface">
+          <div class="piano__controls">
+            <h4 class="piano__heading">PIANO</h4>
+            <label for=""
+              ><input
+                type="radio"
+                class="piano__control__option"
+                name="control"
+                value="letterNotes"
+              />Notes</label
+            >
+            <label for=""
+              ><input
+                type="radio"
+                class="piano__control__option"
+                name="control"
+                value="keyboards"
+              />Clavier</label
+            >
+            <label for=""
+              ><input
+                type="radio"
+                class="piano__control__option"
+                name="control"
+                value="none"
+              />Rien</label
+            >
+          </div>
+          <div class="piano__autoplay">
+            <h4 class="piano__heading">AUTOPLAY</h4>
+            <select class="piano__song-list">
+              <option value="1">Jingle Bells</option>
+              <option value="2">Happy Birthdqy</option>
+            </select>
+
+            <label for=""
+              >Tempo:
+              <select class="piano__tempo">
+                <option value="1">Lent</option>
+                <option value="2">Normal</option>
+                <option value="3">Rapide</option>
+              </select>
+            </label>
+
+            <button class="piano__play-btn">Jouer</button>
+          </div>
+        </div>
+        <div class="piano__speaker"></div>
+      </div>
+      <div class="piano__keyboard">
+        <button class="piano__key piano__key--white"></button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

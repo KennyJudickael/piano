@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 5px;
 }
 
 .piano__body {
@@ -71,10 +72,22 @@ select {
   box-sizing: border-box;
   text-align: center;
   border-radius: 0 0 8px 8px;
+  flex-grow: 1;
 }
 
 .piano__key--black {
   background-color: #000;
   color: #fff;
   height: 60%;
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+
+.empty-space {
+  position: relative;
+}
+
+.piano__key--white {
+  padding-top: 100px;
 }
